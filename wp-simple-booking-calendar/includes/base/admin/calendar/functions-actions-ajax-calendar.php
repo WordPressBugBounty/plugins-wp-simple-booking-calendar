@@ -19,6 +19,10 @@ function wpsbc_refresh_calendar_editor() {
 		wp_die();
 	}
 
+	if(!current_user_can('manage_options')){
+        wp_die();
+    }
+
 	$_POST = stripslashes_deep( $_POST );
 
 	/**
