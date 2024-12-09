@@ -210,7 +210,7 @@ Class WPSBC_WP_List_Table_Calendars extends WPSBC_WP_List_Table {
 
 		if( $item['status'] == 'active' ) {
 
-			$output  = '<strong><a class="row-title" href="' . add_query_arg( array( 'page' => 'wpsbc-calendars', 'subpage' => 'edit-calendar', 'calendar_id' => $item['id'] ) , admin_url( 'admin.php' ) ) . '">' . ( !empty( $item['name'] ) ? $item['name'] : '' ) . '</a></strong>';
+			$output  = '<strong><a class="row-title" href="' . add_query_arg( array( 'page' => 'wpsbc-calendars', 'subpage' => 'edit-calendar', 'calendar_id' => $item['id'] ) , admin_url( 'admin.php' ) ) . '">' . ( !empty( $item['name'] ) ? esc_attr($item['name']) : '' ) . '</a></strong>';
 
 			$actions = array(
 				'edit_calendar' => '<a href="' . add_query_arg( array( 'page' => 'wpsbc-calendars', 'subpage' => 'edit-calendar', 'calendar_id' => $item['id'] ) , admin_url( 'admin.php' ) ) . '">' . __( 'Edit Calendar', 'wp-simple-booking-calendar' ) . '</a>',
@@ -222,7 +222,7 @@ Class WPSBC_WP_List_Table_Calendars extends WPSBC_WP_List_Table {
 
 		if( $item['status'] == 'trash' ) {
 
-			$output  = '<strong>' . ( !empty( $item['name'] ) ? $item['name'] : '' ) . '</strong>';
+			$output  = '<strong>' . ( !empty( $item['name'] ) ? esc_attr($item['name']) : '' ) . '</strong>';
 
 			$actions = array(
 				'restore_calendar' => '<a href="' . wp_nonce_url( add_query_arg( array( 'page' => 'wpsbc-calendars', 'wpsbc_action' => 'restore_calendar', 'calendar_id' => $item['id'] ) , admin_url( 'admin.php' ) ), 'wpsbc_restore_calendar', 'wpsbc_token' ) . '">' . __( 'Restore Calendar', 'wp-simple-booking-calendar' ) . '</a>',
