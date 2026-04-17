@@ -2,7 +2,7 @@
 Contributors: murgroland
 Tags: booking calendar, availability calendar, bookings, calendar, belegungsplan
 Requires at least: 4.7
-Tested up to: 6.8
+Tested up to: 6.9
 Stable tag: 2.0.15
 Requires PHP: 5.6
 License: GPLv2
