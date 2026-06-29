@@ -2,8 +2,8 @@
 Contributors: murgroland
 Tags: booking calendar, availability calendar, bookings, calendar, belegungsplan
 Requires at least: 4.7
-Tested up to: 6.9
-Stable tag: 2.0.15
+Tested up to: 7.0
+Stable tag: 2.0.16
 Requires PHP: 5.6
 License: GPLv2
 License URI: https://www.opensource.org/licenses/GPL-2.0
@@ -95,6 +95,9 @@ Please check [wpsimplebookingcalendar.com](https://www.wpsimplebookingcalendar.c
 3. Available Languages
 
 == Changelog ==
+
+= 2.0.16 = 
+Improved: WordPress 7.0 backend styling improvements
 
 = 2.0.15 =
 * Fixed: Security improvements (XSS issue in the backend, thanks to Ayato Shitomi for reporting)

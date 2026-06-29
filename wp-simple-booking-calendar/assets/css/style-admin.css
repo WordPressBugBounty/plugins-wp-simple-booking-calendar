@@ -609,3 +609,34 @@ a.wpsbc-inactive:hover { color: #b1b1b1; }
 
 	.wpsbc-greater-5-3 #wpsbc-calendar-editor .wpsbc-wrap select {min-height:36px; line-height:1;}
 }
+
+
+
+.wpsbc-greater-7 .wpsbc-wrap select {
+	min-height: 40px !important;
+}
+
+.wpsbc-greater-7 #wpsbc-wpsbc-settings-field-register-website .button-primary,
+.wpsbc-greater-7 #wpsbc-wpsbc-settings-field-register-website .button-secondary {
+	line-height: 2.92307692;
+}
+
+.wpsbc-greater-7 .wpsbc-wrap p.search-box {
+	margin: 0;
+}
+
+
+.wpsbc-greater-7 .wpsbc-wrap .wpsbc-container .wpsbc-calendars .wpsbc-calendar .wpsbc-calendar-header .wpsbc-select-container select {
+	min-height: 1px !important;
+}
+
+.wpsbc-greater-7 .wpsbc-calendar-date-legend-item select {
+	min-height: 1px !important;
+	line-height: 30px !important;
+}
+
+.wpsbc-greater-7 .wpsbc-calendar-date-description-ical input,
+.wpsbc-greater-7 .wpsbc-calendar-date-description input,
+.wpsbc-greater-7 .wpsbc-calendar-date-tooltip input {
+	min-height: 1px;
+}
